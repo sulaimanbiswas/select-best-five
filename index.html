@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Best FIve</title>
+
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'berkshire': ["'Berkshire Swash', cursive"],
+                    'manrope': ["'Manrope', sans-serif"],
+                },
+                extend: {
+                    colors: {
+                        primary: '#015196',
+                        secondary: '#A2A9AF',
+                        cardDark: '#0D0D0D',
+                        dark: '#151515',
+                        paragraph: '#B3B3B3',
+                        extra: '#FF5E19',
+                    }
+                },
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-dark font-manrope">
+    <header class="flex justify-center items-center bg-black min-h-[481px] w-full relative">
+        <div class="w-full sm:w-3/4 md:w-1/2 container text-center space-y-7 z-10">
+            <div class="relative">
+                <h1 class="font-berkshire text-4xl sm:text-6xl md:text-[4.75rem] text-extra">Select Your Best Five</h1>
+                <div class="absolute top-50 right-0 z-0 hidden sm:block">
+                    <img src="images/linemarker.png" alt="">
+                </div>
+            </div>
+            <p class="text-white text-base md:text-lg">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+        <div class="absolute -bottom-6 left-0 z-0">
+            <img src="images/header-left.png" alt="">
+        </div>
+        <div class="absolute top-10 right-36 z-0 hidden md:block">
+            <img src="images/card-psg.png" alt="">
+        </div>
+        <div class="absolute bottom-0 right-0 z-0 hidden md:block">
+            <img src="images/Rectangle 57.png" alt="">
+        </div>
+        <div class="absolute bottom-0 right-0 z-0 hidden md:block">
+            <img src="images/soccer-goal-top-png-8 4.png" alt="">
+        </div>
+    </header>
+    <main class="bg-dark px-36 py-16">
+        <section class="flex gap-6 justify-center">
+            <div class="w-9/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-01.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Lionel Messi</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-1" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-02.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Neymar Jr</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-2" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-03.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Kylian Mbappé</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-3" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-04.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Vítor Machado</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-4" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-05.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Sergio Ramos</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-5" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-06.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Renato Sanches</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-6" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-01.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Lionel Messi</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-7" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-02.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Neymar Jr</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-8" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-03.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Kylian Mbappé</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-9" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-04.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Vítor Machado</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-10" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-05.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Sergio Ramos</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-11" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div class="w-full">
+                        <img class="w-full" src="images/player-06.png" alt="">
+                    </div>
+                    <div class="flex flex-col m-5 text-center">
+                        <h3 class="font-extrabold text-2xl text-white">Renato Sanches</h3>
+                        <div class="flex space-x-2 justify-center mt-2">
+                            <p class="font-normal text-base text-paragraph">36 Goals</p>
+                            <p class="font-normal text-base text-paragraph">.</p>
+                            <p class="font-normal text-base text-paragraph">120 Assist</p>
+                        </div>
+                        <button id="player-12" class="bg-primary py-[10px] mt-6 font-bold text-base text-white player-select-btn">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="w-3/12 flex flex-col gap-6">
+                <div class="bg-black pt-6 py-6 pb-[50px]">
+                    <div class="text-center flex flex-col justify-center items-center">
+                        <h2 class="font-medium text-2xl text-white">Selected - V</h2>
+                        <div class="text-center">
+                            <img src="images/uregmarker.png" alt="">
+                        </div>
+                    </div>
+                    <div class="m-5  pt-2">
+                        <ol id="selected-players" class="list-decimal ml-5  font-extrabold space-y-[22px]"></ol>
+                    </div>
+                </div>
+
+
+
+
+                <div class="bg-black  pt-6 py-6 pb-[50px]">
+                    <div class="text-center flex flex-col justify-center items-center">
+                        <h2 class="font-medium text-2xl text-white">Budget</h2>
+                        <div class="text-center">
+                            <img src="images/uregmarker.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col m-5 text-left">
+                        <div class="flex items-center gap-2">
+                            <label class="text-base font-normal text-secondary w-1/2" for="per-player">Per Player</label>
+                            <input id="per-player" class="text-base font-normal bg-transparent text-white w-1/2 border border-white p-[10px]" type="text">
+                        </div>
+                        <button id="calculate" class="bg-primary py-[10px] mt-6 font-bold text-base text-white">Calculate</button>
+
+                        <div class="mt-8 flex justify-between">
+                            <p class="text-base font-normal text-secondary">Player Expenses</p>
+                            <p class="text-base font-normal text-white">$<span id="player-expenses">0</span></p>
+                        </div>
+
+                        <div class="flex items-center gap-2 mt-3">
+                            <label class="text-base font-normal text-secondary w-1/2" for="manager">Manager</label>
+                            <input id="manager" class="text-base font-normal bg-transparent text-white w-1/2 border border-white p-[10px]" type="text">
+                        </div>
+                        <div class="flex items-center gap-2 mt-3">
+                            <label class="text-base font-normal text-secondary w-1/2" for="coach">Coach</label>
+                            <input id="coach" class="text-base font-normal bg-transparent text-white w-1/2 border border-white p-[10px]" type="text">
+                        </div>
+                        <button id="calculate-total" class="bg-primary py-[10px] mt-6 font-bold text-base text-white">Calculate Total</button>
+                        <div class="mt-8 flex justify-between">
+                            <p class="text-base font-normal text-white">Total</p>
+                            <p class="text-base font-bold text-extra">$<span id="total">0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="border-t">
+        <p class="py-10 text-base font-medium text-white text-center">Copyright @ 2022 All Rights Reserved.</p>
+    </footer>
+
+    <script src="script/utilities.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
